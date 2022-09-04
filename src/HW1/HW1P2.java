@@ -1,3 +1,5 @@
+package HW1;
+
 import util.TwoDimensionArrayHelper;
 
 import java.util.Arrays;

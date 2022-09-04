@@ -1,3 +1,5 @@
+package HW1;
+
 import util.Grid;
 
 public class HW1P1 {
