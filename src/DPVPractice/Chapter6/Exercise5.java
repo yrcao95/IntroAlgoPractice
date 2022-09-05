@@ -1,6 +1,6 @@
 package DPVPractice.Chapter6;
 
-import util.TwoDimensionArrayHelper;
+import util.ArrayHelper;
 
 import java.util.Arrays;
 
@@ -49,7 +49,7 @@ public class Exercise5 {
                 }
             }
         }
-        System.out.println(TwoDimensionArrayHelper.print(dp));
+        System.out.println(ArrayHelper.print(dp));
         return Arrays.stream(dp[n]).max().getAsInt();
     }
 
@@ -89,8 +89,8 @@ public class Exercise5 {
     }
 
     public static void main(String[] args) {
-        int[][] board = TwoDimensionArrayHelper.random2D(4, 5, 11);
+        int[][] board = ArrayHelper.random2D(4, 5, 11);
         String commonString = "Board is \n%s, \n The largest sum is %s.";
-        System.out.println(String.format(commonString, TwoDimensionArrayHelper.print(board), solution(board)));
+        System.out.println(String.format(commonString, ArrayHelper.print(board), solution(board)));
     }
 }

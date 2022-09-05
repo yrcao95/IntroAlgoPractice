@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 
-public class TwoDimensionArrayHelper {
+public class ArrayHelper {
     public static <T> String print(T[][] arr) {
         StringBuilder sb = new StringBuilder();
         for (T[] t : arr) {
@@ -48,6 +48,16 @@ public class TwoDimensionArrayHelper {
             for (int j = 0; j < n; j++) {
                 ans[i][j] = rd.nextInt(k);
             }
+        }
+        return ans;
+    }
+
+    public static int[] preSum(int[] arr) {
+        int sum = 0;
+        int[] ans = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            ans[i] = sum;
         }
         return ans;
     }
